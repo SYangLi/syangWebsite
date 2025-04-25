@@ -2,7 +2,7 @@ const canvas = document.getElementById('goBoard');
 const ctx = canvas.getContext('2d');
 const boardSize = 19;
 const cellSize = canvas.width / (boardSize + 1);
-let currentPlayer = 'B'; // B for Black, W for White
+let currentPlayer = 'B';
 let board = Array(boardSize).fill().map(() => Array(boardSize).fill(null));
 
 function drawBoard() {
